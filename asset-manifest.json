@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/mybitstore-clone/static/css/main.116c8f70.css",
-    "main.js": "/mybitstore-clone/static/js/main.d63b038b.js",
+    "main.css": "/mybitstore-clone/static/css/main.8b7a71c1.css",
+    "main.js": "/mybitstore-clone/static/js/main.7cd746b7.js",
     "static/media/iphone.webp": "/mybitstore-clone/static/media/iphone.1a9609d1700cf6fa44ec.webp",
+    "static/media/man.webp": "/mybitstore-clone/static/media/man.75294e7ead5ec96a3382.webp",
     "static/media/app-store.webp": "/mybitstore-clone/static/media/app-store.2ac63427b788ff0307ff.webp",
     "static/media/google-play.webp": "/mybitstore-clone/static/media/google-play.9065c3989a3449fcbbde.webp",
     "static/media/logo.svg": "/mybitstore-clone/static/media/logo.bab10e8917371e2f56b74601a8973347.svg",
     "static/media/logo-blue-sm.webp": "/mybitstore-clone/static/media/logo-blue-sm.3d13e6428b3935715936.webp",
     "index.html": "/mybitstore-clone/index.html",
-    "main.116c8f70.css.map": "/mybitstore-clone/static/css/main.116c8f70.css.map",
-    "main.d63b038b.js.map": "/mybitstore-clone/static/js/main.d63b038b.js.map"
+    "main.8b7a71c1.css.map": "/mybitstore-clone/static/css/main.8b7a71c1.css.map",
+    "main.7cd746b7.js.map": "/mybitstore-clone/static/js/main.7cd746b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.116c8f70.css",
-    "static/js/main.d63b038b.js"
+    "static/css/main.8b7a71c1.css",
+    "static/js/main.7cd746b7.js"
   ]
 }
