@@ -3,42 +3,67 @@ import { IoIosTimer } from 'react-icons/io';
 import { AiOutlineStar, AiFillLock } from 'react-icons/ai';
 import { BsGraphUp, BsFillWalletFill, BsWallet } from 'react-icons/bs';
 import man from '../Assets/man.webp';
+import support from '../Assets/ssupportt.svg';
 
 const Hero = () => {
   const whys = [
     {
       id: 1,
-      ikon: IoIosTimer,
+      child: (
+        <>
+          <IoIosTimer size={30} />
+        </>
+      ),
       head: 'Timely Support Response',
       para: 'Our support team is available all the time to assist you with all your requests and questions',
     },
     {
       id: 2,
-      ikon: AiOutlineStar,
+      child: (
+        <>
+          <AiOutlineStar size={30} />
+        </>
+      ),
       head: 'Reputation Based System',
       para: 'Our rating system enables you to identify trusted traders to trade with.',
     },
     {
       id: 3,
-      ikon: BsGraphUp,
+      child: (
+        <>
+          <BsGraphUp size={30} />
+        </>
+      ),
       head: 'Competitive Low Fees',
       para: 'Start trading on Mybitstore and enjoy lower fees aon all your trades',
     },
     {
       id: 4,
-      ikon: AiFillLock,
+      child: (
+        <>
+          <BsFillWalletFill size={30} />
+        </>
+      ),
       head: 'Secured Escrow Wallet',
       para: 'You can trade securely via P2P thanks to our reliable escrow service. If necessary, we offer excellent mediators to quickly resolve conflicts.',
     },
     {
       id: 5,
-      ikon: BsWallet,
+      child: (
+        <>
+          <BsWallet size={30} />
+        </>
+      ),
       head: 'Simple and Instant Withdrawals',
       para: 'Enjoy easy and instant withdrawals from Mybitstore wallet to other external wallets.',
     },
     {
       id: 6,
-      ikon: BsFillWalletFill,
+      child: (
+        <>
+          <AiFillLock size={30} />
+        </>
+      ),
       head: 'Get Free Wallet',
       para: 'Get a free bitcoin wallet with Mybitstore and enjoy your cryptocurrency experience.',
     },
@@ -78,16 +103,16 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {whys.map(({ ikon, head, para }) => (
+      {whys.map(({ child, head, para }) => (
         <div>
-          <div className='mt-12 text-center'>
+          <div className='mt-12 text-center px-6'>
             <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
               <div className='pt-6'>
                 <div className='bg-gray-100 rounded-lg px-6 pb-8'>
                   <div className='-mt-6'>
                     <div>
-                      <span className='inline-flex items-center -mt-8 justify-center p-3 bg-indigo-500 rounded-md shadow-lg'>
-                        {ikon}
+                      <span className='inline-flex items-center -mt-8 justify-center p-3 bg-indigo-500 text-white rounded-md shadow-lg'>
+                        {child}
                       </span>
                     </div>
                     <h3 className='mt-8 text-lg font-medium tracking-tight'>
@@ -101,6 +126,18 @@ const Hero = () => {
           </div>
         </div>
       ))}
+      <div className='relative w-full md:max-w-5xl xl:max-w-6xl mx-auto'>
+        <div className='relative h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2'>
+          <img src={support} className='' />
+          {/* <div className=''></div> */}
+        </div>
+        <div>
+          <h2>Award Winning</h2>
+          <p></p>
+          <p></p>
+          <div></div>
+        </div>
+      </div>
     </section>
   );
 };
