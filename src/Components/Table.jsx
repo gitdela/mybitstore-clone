@@ -21,20 +21,25 @@ const CryptoTable = () => {
         );
         setCryptoData(response.data);
         console.log(cryptoData);
+        localStorage.setItem('cryptoData', JSON.stringify(response.data));
       } catch (error) {
         console.error('Error fetching data:', error);
       }
     };
 
-    fetchData();
-    // Fetch data every 5 minutes (adjust the interval as needed)
+    const storedData = localStorage.getItem('cryptoData');
+    if (storedData) {
+      setCryptoData(JSON.parse(storedData));
+    } else {
+      fetchData();
+    }
     const intervalId = setInterval(fetchData, 60 * 60 * 1000);
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className='mt-48 bg-gray-50  py-16 sm:py-20 lg:py-20'>
+    <div className='max-w-screen-lg mx-auto mt-48 sm:py-20 lg:py-72'>
       <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-5xl xl:max-w-6xl'>
         <h1 className='mt-2 text-center text-3xl  font-extrabold text-gray-900 tracking-tight sm:text-4xl'>
           Todays Cryptocurrency Prices By Market Cap

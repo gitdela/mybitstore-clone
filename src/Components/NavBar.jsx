@@ -72,7 +72,7 @@ const NavBar = () => {
           </ul>
         )}
       </div>
-      <div className='relative px-4 md:max-w-screen-xl mx-auto mt-10 text-center'>
+      <div className='relative px-4 md:max-w-screen-xl mx-auto mt-10 md:pb-48 text-center'>
         <h1 className='text-4xl my-4 md:hidden'>
           A better way to <br /> buy bitcoin
         </h1>
@@ -108,7 +108,7 @@ const NavBar = () => {
             </a>
           </div>
         </div>
-        <div className='flex justify-center items-center absolute mt-[-150px] w-11/12 z-11'>
+        <div className='flex justify-center items-center absolute left-1/2 transform -translate-x-1/2 mt-[-150px] w-11/12 z-11'>
           <img src={iphone} className='' />
         </div>
       </div>
