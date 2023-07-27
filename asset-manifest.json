@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mybitstore-clone/static/css/main.2aa4afd2.css",
-    "main.js": "/mybitstore-clone/static/js/main.df3c8aac.js",
+    "main.js": "/mybitstore-clone/static/js/main.2c939a06.js",
     "static/media/iphone.webp": "/mybitstore-clone/static/media/iphone.1a9609d1700cf6fa44ec.webp",
     "static/media/app-store.webp": "/mybitstore-clone/static/media/app-store.2ac63427b788ff0307ff.webp",
     "static/media/google-play.webp": "/mybitstore-clone/static/media/google-play.9065c3989a3449fcbbde.webp",
@@ -9,10 +9,10 @@
     "static/media/logo-blue-sm.webp": "/mybitstore-clone/static/media/logo-blue-sm.3d13e6428b3935715936.webp",
     "index.html": "/mybitstore-clone/index.html",
     "main.2aa4afd2.css.map": "/mybitstore-clone/static/css/main.2aa4afd2.css.map",
-    "main.df3c8aac.js.map": "/mybitstore-clone/static/js/main.df3c8aac.js.map"
+    "main.2c939a06.js.map": "/mybitstore-clone/static/js/main.2c939a06.js.map"
   },
   "entrypoints": [
     "static/css/main.2aa4afd2.css",
-    "static/js/main.df3c8aac.js"
+    "static/js/main.2c939a06.js"
   ]
 }
