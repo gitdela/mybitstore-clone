@@ -11,7 +11,7 @@ const Hero = () => {
       id: 1,
       child: (
         <>
-          <IoIosTimer size={30} />
+          <IoIosTimer size={24} />
         </>
       ),
       head: 'Timely Support Response',
@@ -21,7 +21,7 @@ const Hero = () => {
       id: 2,
       child: (
         <>
-          <AiOutlineStar size={30} />
+          <AiOutlineStar size={24} />
         </>
       ),
       head: 'Reputation Based System',
@@ -31,7 +31,7 @@ const Hero = () => {
       id: 3,
       child: (
         <>
-          <BsGraphUp size={30} />
+          <BsGraphUp size={24} />
         </>
       ),
       head: 'Competitive Low Fees',
@@ -41,7 +41,7 @@ const Hero = () => {
       id: 4,
       child: (
         <>
-          <BsFillWalletFill size={30} />
+          <BsFillWalletFill size={24} />
         </>
       ),
       head: 'Secured Escrow Wallet',
@@ -51,7 +51,7 @@ const Hero = () => {
       id: 5,
       child: (
         <>
-          <BsWallet size={30} />
+          <BsWallet size={24} />
         </>
       ),
       head: 'Simple and Instant Withdrawals',
@@ -61,7 +61,7 @@ const Hero = () => {
       id: 6,
       child: (
         <>
-          <AiFillLock size={30} />
+          <AiFillLock size={24} />
         </>
       ),
       head: 'Get Free Wallet',
@@ -103,15 +103,15 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      {whys.map(({ child, head, para }) => (
-        <div>
-          <div className='mt-12 text-center px-6'>
-            <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3'>
+      <div className='md:columns-3'>
+        {whys.map(({ child, head, para }) => (
+          <div className='flex justify-center items-center text-center p-6'>
+            <div className=''>
               <div className='pt-6'>
                 <div className='bg-gray-100 rounded-lg px-6 pb-8'>
                   <div className='-mt-6'>
-                    <div>
-                      <span className='inline-flex items-center -mt-8 justify-center p-3 bg-indigo-500 text-white rounded-md shadow-lg'>
+                    <div className='flex items-center justify-center p-3'>
+                      <span className='bg-indigo-500 p-4 text-white -mt-5 rounded-md'>
                         {child}
                       </span>
                     </div>
@@ -124,18 +124,28 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </div>
-      ))}
-      <div className='relative w-full md:max-w-5xl xl:max-w-6xl mx-auto'>
-        <div className='relative h-56 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2'>
+        ))}
+      </div>
+      <div className='w-full md:max-w-5xl xl:max-w-6xl mx-auto md:flex'>
+        <div className='h-56 sm:h-72 md:left-0 md:h-full md:w-1/2'>
           <img src={support} className='' />
           {/* <div className=''></div> */}
         </div>
-        <div>
-          <h2>Award Winning</h2>
-          <p></p>
-          <p></p>
-          <div></div>
+        <div className='mt-48 px-4'>
+          <h2 className='uppercase text-base text-center md:text-left font-semibold tracking-wider'>
+            Award Winning Support
+          </h2>
+          <p className='mt-2 text-center md:text-left  text-gray-700 text-3xl font-extrabold tracking-tight sm:text-4xl'>
+            We're here to help
+          </p>
+          <p className='mt-3 text-center md:text-left text-base '>
+            Your feedback is valuable to us. If you have problems with our
+            platform, want to suggest a feature or report abuse, kindly use the
+            form below
+          </p>
+          <div className='w-1/2 mx-auto'>
+            <p>Visit the help center</p>
+          </div>
         </div>
       </div>
     </section>
