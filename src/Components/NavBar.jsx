@@ -99,7 +99,7 @@ const NavBar = () => {
             Fast and easy way to purchase cryptos using our P2P escrow system
             across the world using over 250 payment methods.
           </p>
-          <div className='w-3/4 mx-auto flex justify-center gap-4 items-center pt-6 pb-24'>
+          <div className='w-3/4 mx-auto flex justify-center gap-4 items-center pt-6 pb-48'>
             <a href=''>
               <img src={google} className='w-25' />
             </a>
@@ -108,7 +108,7 @@ const NavBar = () => {
             </a>
           </div>
         </div>
-        <div className='flex justify-center items-center absolute mt-[-90px] w-11/12 z-11'>
+        <div className='flex justify-center items-center absolute mt-[-150px] w-11/12 z-11'>
           <img src={iphone} className='' />
         </div>
       </div>
