@@ -28,7 +28,7 @@ const CryptoTable = () => {
 
     fetchData();
     // Fetch data every 5 minutes (adjust the interval as needed)
-    const intervalId = setInterval(fetchData, 5 * 60 * 1000);
+    const intervalId = setInterval(fetchData, 60 * 60 * 1000);
 
     return () => clearInterval(intervalId);
   }, []);
